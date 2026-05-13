@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Limpopo Voice Web presence and product overview for translation and voice experiences."
+    />
+    <title>Limpopo Voice | Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="brand">Limpopo Voice</div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#deploy">Deploy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">web.limpopovoice.co.za</p>
+        <h1>Separate website. Separate repo. Zero overlap.</h1>
+        <p class="hero-copy">
+          This site is intentionally isolated from your app deployment so you can
+          iterate quickly, deploy safely, and manage DNS with confidence.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#deploy">Deployment checklist</a>
+          <a class="btn btn-ghost" href="https://github.com/new" target="_blank" rel="noreferrer">Create GitHub repo</a>
+        </div>
+      </section>
+
+      <section id="about" class="card-grid reveal-group">
+        <article class="card">
+          <h2>Directory isolation</h2>
+          <p>
+            Files live in a dedicated folder and version history stays independent
+            from your app codebase.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Subdomain routing</h2>
+          <p>
+            Use <strong>web.limpopovoice.co.za</strong> with a CNAME record to
+            avoid production clashes on your main domain.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Continuous deployment</h2>
+          <p>
+            Push to <strong>main</strong> and GitHub Pages publishes automatically
+            via GitHub Actions.
+          </p>
+        </article>
+      </section>
+
+      <section id="stack" class="stack reveal-group">
+        <h2>Included stack</h2>
+        <ul>
+          <li>HTML + CSS + JavaScript</li>
+          <li>GitHub Pages workflow</li>
+          <li>Custom domain CNAME support</li>
+          <li>Responsive and accessible baseline</li>
+        </ul>
+      </section>
+
+      <section id="deploy" class="deploy reveal-group">
+        <h2>Deployment flow</h2>
+        <ol>
+          <li>Initialize git and push to a new GitHub repository.</li>
+          <li>Enable Pages using GitHub Actions in repository settings.</li>
+          <li>Keep the CNAME file set to web.limpopovoice.co.za.</li>
+          <li>Create DNS CNAME: web -> your GitHub Pages host target.</li>
+          <li>Verify HTTPS provisioning and test from multiple devices.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Limpopo Voice. Built for clean separation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
