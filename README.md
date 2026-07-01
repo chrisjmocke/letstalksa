@@ -1,116 +1,80 @@
-# Limpopo Voice Website (Independent Repo)
+# Let's Talk SA Website
 
-This repository is intentionally separate from your app project to avoid deployment and code overlap.
+Marketing website for Let's Talk SA, a voice-first translation platform built for South African communication needs.
 
-## 1) Directory Separation
+Live URL: https://www.talksa.co.za/
 
-Current website directory:
+## Overview
 
-- `c:\Users\BOK\web.limpopovoice.co.za`
+This is a static landing page focused on:
 
-Keep your app and website in separate folders and separate repositories.
+- Voice-first translation positioning
+- Individual and Organisation Tier messaging
+- Core feature communication
+- Clear conversion-focused CTAs
 
-## 2) Subdomain / Hosting Strategy
+## Current Page Structure
 
-Recommended:
+The landing page includes these sections:
 
-- App: `https://limpopovoice.co.za/`
-- Website: `https://web.limpopovoice.co.za/`
+1. Hero section
+2. Social proof / credibility strip
+3. Problem to solution section
+4. Core features grid (6 cards)
+5. Organisation Tier highlight block
+6. Governance and visibility section
+7. Payment and reliability section
+8. Audience use cases
+9. Final CTA section
 
-This repository is configured for **GitHub Pages** with custom domain support.
+## SEO and Social Metadata
 
-## 3) Version Control (Separate Git Repo)
+Configured in [index.html](index.html):
 
-Already initialized as its own Git repository.
+- SEO Title: Let's Talk | Voice-First Translation for South African Languages
+- Meta Description: Let's Talk is a voice-first translation platform for individuals and teams. Translate instantly, listen to spoken output, share results, and manage shared credits with Organisation Tier.
+- Open Graph Title: Let's Talk: Speak, Translate, Connect
+- Open Graph Description: Real-time voice translation with Learn mode, history, sharing, and team-ready Organisation Tier.
 
-Use these commands to connect and push:
+## Project Files
 
-```powershell
-git remote add origin https://github.com/<your-username>/web.limpopovoice.co.za.git
-git add .
-git commit -m "Initial website scaffold"
-git push -u origin main
-```
+- [index.html](index.html): Page content and metadata
+- [styles.css](styles.css): Layout, visual system, responsive behavior, animations
+- [script.js](script.js): Reveal-on-scroll behavior and dynamic footer year
+- [CNAME](CNAME): Custom domain configuration for GitHub Pages
 
-## 4) Hosting Setup (GitHub Pages)
+## Local Development
 
-Repository includes [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for automatic deployment.
+Run with any static server.
 
-In GitHub repository settings:
-
-1. Go to **Settings -> Pages**.
-2. Set **Source** to **GitHub Actions**.
-3. Confirm custom domain is `web.limpopovoice.co.za`.
-
-The `CNAME` file is already included.
-
-## 5) DNS Configuration
-
-### For subdomain (recommended website URL)
-
-Create a DNS `CNAME` record:
-
-- Host: `web`
-- Type: `CNAME`
-- Value: `<your-github-username>.github.io`
-
-### Optional: apex root on GitHub Pages
-
-If you host `limpopovoice.co.za` itself on GitHub Pages, use A records:
-
-- `185.199.108.153`
-- `185.199.109.153`
-- `185.199.110.153`
-- `185.199.111.153`
-
-Keep your app hosting strategy in mind before changing apex records.
-
-## 6) Website Development
-
-This project is a static website stack:
-
-- [`index.html`](index.html)
-- [`styles.css`](styles.css)
-- [`script.js`](script.js)
-
-## 7) Testing
-
-### Local test
-
-Use VS Code Live Server extension, or any static server.
-
-PowerShell example (Node):
+PowerShell example:
 
 ```powershell
 npx serve .
 ```
 
-Then open `http://localhost:3000` and verify:
+Then open http://localhost:3000.
 
-- Responsive layout (mobile + desktop)
-- Navigation links and CTA buttons
-- Animation/reveal behavior
+## Deployment
 
-### Staging-style checks before production
+This repository is deployed via GitHub Pages and connected to the custom domain in [CNAME](CNAME).
 
-- Confirm GitHub Actions deploy succeeds
-- Verify `https://web.limpopovoice.co.za` resolves
-- Check SSL certificate is issued
-- Run a hard refresh and test from phone + desktop
-
-## 8) Deployment
-
-Deployment is automatic on push to `main`.
+Standard publish flow:
 
 ```powershell
 git add .
-git commit -m "Update website"
-git push
+git commit -m "Update website content"
+git push origin main
 ```
 
-## 9) Monitor and Maintain
+## Content Editing Guide
 
-- Review GitHub Actions run status after each push
-- Monitor DNS expiry and SSL status
-- Keep content and dependencies updated
-- Add uptime checks (for example UptimeRobot) for `web.limpopovoice.co.za`
+- Update copy and section structure in [index.html](index.html)
+- Update design tokens, spacing, colors, and responsive rules in [styles.css](styles.css)
+- Update interaction behavior in [script.js](script.js)
+
+## Notes
+
+- Keep messaging aligned to Let's Talk SA brand voice.
+- Preserve mobile-first responsiveness for all new sections.
+- Keep CTA text and section order consistent unless intentionally redesigning the page.
