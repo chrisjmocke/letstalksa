@@ -3,18 +3,21 @@ if (yearEl) {
   yearEl.textContent = String(new Date().getFullYear());
 }
 
+const revealEls = document.querySelectorAll(".reveal-group");
+
 const observer = new IntersectionObserver(
-  (entries) => {
-    for (const entry of entries) {
+  (entries, io) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+        io.unobserve(entry.target);
       }
-    }
+    });
   },
-  { threshold: 0.18 }
+  { threshold: 0.16 }
 );
 
-document.querySelectorAll(".reveal-group").forEach((section) => {
-  observer.observe(section);
+revealEls.forEach((el, idx) => {
+  el.style.transitionDelay = `${Math.min(idx * 65, 340)}ms`;
+  observer.observe(el);
 });

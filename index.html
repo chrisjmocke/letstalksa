@@ -3,93 +3,194 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Talk | Voice-First Translation for South African Languages</title>
     <meta
       name="description"
-      content="Limpopo Voice Web presence and product overview for translation and voice experiences."
+      content="Let's Talk is a voice-first translation platform for individuals and teams. Translate instantly, listen to spoken output, share results, and manage shared credits with Organisation Tier."
     />
-    <title>Lets Talk SA</title>
+    <meta property="og:title" content="Let's Talk: Speak, Translate, Connect" />
+    <meta
+      property="og:description"
+      content="Real-time voice translation with Learn mode, history, sharing, and team-ready Organisation Tier."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.talksa.co.za/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Let's Talk: Speak, Translate, Connect" />
+    <meta
+      property="twitter:description"
+      content="Real-time voice translation with Learn mode, history, sharing, and team-ready Organisation Tier."
+    />
+    <link rel="canonical" href="https://www.talksa.co.za/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,700;10..48,800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-a" aria-hidden="true"></div>
-    <div class="bg-orb orb-b" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
     <header class="site-header">
-      <div class="brand">Let's Talk SA</div>
+      <a class="brand" href="#top" aria-label="Let's Talk home">Let's Talk</a>
       <nav class="top-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#stack">Stack</a>
-        <a href="#deploy">Deploy</a>
+        <a href="#features">Features</a>
+        <a href="#org-tier">Organisation Tier</a>
+        <a href="#use-cases">Use Cases</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <p class="eyebrow">www.letstalksa.co.za</p>
-        <h1>pieter. Separate repo. Zero overlap.</h1>
+    <main id="top">
+      <section class="hero reveal-group" aria-labelledby="hero-title">
+        <p class="eyebrow">Voice-first translation platform</p>
+        <h1 id="hero-title">Speak Any Language. Connect Instantly.</h1>
         <p class="hero-copy">
-          This site is intentionally isolated from your app deployment so you can
-          iterate quickly, deploy safely, and manage DNS with confidence.
+          Let's Talk is a voice-first translation platform built for South African
+          communication needs, helping people and teams translate, listen, and
+          share in seconds.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#deploy">Deployment checklist</a>
-          <a class="btn btn-ghost" href="https://github.com/new" target="_blank" rel="noreferrer">Create GitHub repo</a>
+          <a class="btn btn-primary" href="#final-cta">Get Let's Talk</a>
+          <a class="btn btn-secondary" href="#org-tier">Explore Organisation Tier</a>
+        </div>
+        <p class="trust-line">
+          Voice translation • Shared team credits • Activity tracking
+        </p>
+      </section>
+
+      <section class="credibility reveal-group" aria-labelledby="credibility-title">
+        <h2 id="credibility-title">Built for real conversations, not demos.</h2>
+        <div class="credibility-points">
+          <p>Designed for multilingual day-to-day communication</p>
+          <p>Supports individual and organization workflows</p>
+          <p>Scales from personal use to shared team access</p>
         </div>
       </section>
 
-      <section id="about" class="card-grid reveal-group">
-        <article class="card">
-          <h2>Directory isolation</h2>
+      <section class="problem-solution reveal-group" aria-labelledby="problem-title">
+        <article class="panel panel-problem">
+          <h2 id="problem-title">The Problem</h2>
           <p>
-            Files live in a dedicated folder and version history stays independent
-            from your app codebase.
+            Language barriers slow service, create misunderstandings, and reduce
+            confidence in critical moments.
           </p>
         </article>
-        <article class="card">
-          <h2>Subdomain routing</h2>
+        <article class="panel panel-solution" aria-labelledby="solution-title">
+          <h2 id="solution-title">The Solution</h2>
           <p>
-            Use <strong>web.limpopovoice.co.za</strong> with a CNAME record to
-            avoid production clashes on your main domain.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Continuous deployment</h2>
-          <p>
-            Push to <strong>main</strong> and GitHub Pages publishes automatically
-            via GitHub Actions.
+            Let's Talk gives users a fast, voice-first way to communicate across
+            languages, with spoken playback, saved history, and share-ready
+            outputs.
           </p>
         </article>
       </section>
 
-      <section id="stack" class="stack reveal-group">
-        <h2>Included stack</h2>
+      <section id="features" class="features reveal-group" aria-labelledby="features-title">
+        <h2 id="features-title">Core Features</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Real-Time Voice Translation</h3>
+            <p>Speak naturally and get instant translated output.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Spoken Playback</h3>
+            <p>Listen to translations to communicate clearly and confidently.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Learn Mode</h3>
+            <p>Save useful phrases and build familiarity over time.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Translation History</h3>
+            <p>Access previous translations without repeating work.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Share Tools</h3>
+            <p>Share translation results quickly across channels.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Flexible Credit Tiers</h3>
+            <p>Choose personal or higher-volume usage plans as needed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="org-tier" class="org-tier reveal-group" aria-labelledby="org-title">
+        <h2 id="org-title">Organisation Tier: Pool &amp; Invite</h2>
+        <p class="org-intro">
+          Built for schools, clinics, travel teams, and service organizations
+          that need shared translation capacity.
+        </p>
+        <ol class="steps">
+          <li>Owner creates or tops up a shared credit pool.</li>
+          <li>Team members join with an invite code.</li>
+          <li>Members consume credits from the shared pool.</li>
+          <li>Owners track top-ups, spend, and settings activity.</li>
+        </ol>
+        <a class="btn btn-primary" href="#final-cta">Start with Organisation Tier</a>
+      </section>
+
+      <section class="governance reveal-group" aria-labelledby="governance-title">
+        <h2 id="governance-title">Built for control and accountability</h2>
         <ul>
-          <li>HTML + CSS + JavaScript</li>
-          <li>GitHub Pages workflow</li>
-          <li>Custom domain CNAME support</li>
-          <li>Responsive and accessible baseline</li>
+          <li>Owner/member role model</li>
+          <li>Invite-code based onboarding</li>
+          <li>Organization activity log (top-ups, spend, updates)</li>
+          <li>Clear pool balance visibility</li>
         </ul>
       </section>
 
-      <section id="deploy" class="deploy reveal-group">
-        <h2>Deployment flow</h2>
-        <ol>
-          <li>Initialize git and push to a new GitHub repository.</li>
-          <li>Enable Pages using GitHub Actions in repository settings.</li>
-          <li>Keep the CNAME file set to web.limpopovoice.co.za.</li>
-          <li>Create DNS CNAME: web -> your GitHub Pages host target.</li>
-          <li>Verify HTTPS provisioning and test from multiple devices.</li>
-        </ol>
+      <section class="reliability reveal-group" aria-labelledby="reliability-title">
+        <h2 id="reliability-title">Flexible billing with sandbox-ready testing</h2>
+        <p>
+          Let's Talk supports payment integration workflows designed for staged
+          rollout and testing, with production-ready server-side security
+          patterns.
+        </p>
+      </section>
+
+      <section id="use-cases" class="use-cases reveal-group" aria-labelledby="use-cases-title">
+        <h2 id="use-cases-title">Who Uses Let's Talk</h2>
+        <div class="use-case-grid">
+          <article class="use-case-card">
+            <h3>Schools</h3>
+            <p>
+              Help educators and learners communicate in multilingual classrooms.
+            </p>
+          </article>
+          <article class="use-case-card">
+            <h3>Healthcare</h3>
+            <p>
+              Support clearer patient and staff communication in clinics and
+              practices.
+            </p>
+          </article>
+          <article class="use-case-card">
+            <h3>Service &amp; Travel Teams</h3>
+            <p>
+              Enable customer-facing teams to communicate quickly and
+              professionally.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="final-cta" class="final-cta reveal-group" aria-labelledby="final-cta-title">
+        <h2 id="final-cta-title">
+          Ready to remove language barriers from everyday work?
+        </h2>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#top">Get Let's Talk</a>
+          <a class="btn btn-secondary" href="mailto:hello@talksa.co.za"
+            >Contact Us for Organisation Setup</a
+          >
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Limpopo Voice. Built for clean separation.</p>
+      <p>© <span id="year"></span> Let's Talk. Speak, translate, connect.</p>
     </footer>
 
     <script src="script.js"></script>
